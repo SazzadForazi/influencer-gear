@@ -187,3 +187,56 @@ p{
  .text{
 color: white;
  }
+ .bar{
+     display: none;
+ }
+ @media (max-width:1000px) {
+     .card{
+         grid-template-columns: repeat(2,1fr);
+     }
+     .nav-menu{
+         display: none;
+     }
+     .bar{
+         display: block;
+     }
+     .banner-section{
+         flex-direction: column;
+     }
+     .banner-discussion{
+         width: 50%;
+     }
+     .banner-img{
+         width: 50%;
+     }
+   .logo{
+    flex-direction: column;
+    margin-top: 30px;
+    width: 100%;
+   }
+ }
+ @media (max-width:600px) {
+    .card{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .nav-menu{
+        display: none;
+    }
+    .bar{
+        display: block;
+    }
+    .banner-section{
+        flex-direction: column;
+    }
+    .banner-discussion{
+        width: 50%;
+    }
+    .banner-img{
+        width: 50%;
+    }
+  .logo{
+   flex-direction: column;
+   margin-top: 30px;
+   width: 100%;
+  }
+}
